@@ -1,0 +1,232 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open sans", "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", 
+  "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 15px;
+  line-height: 1.9;
+  letter-spacing: .8px;
+  word-break: normal;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #32CD32;
+  position: relative;
+  display: inline-block;
+  transition: .3s;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.text-large-bold {
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.site-title {
+  font-family: "Open sans", sans-serif;
+  font-size: 40px;
+  font-weight: normal;
+  margin-bottom: 15px;
+  letter-spacing: .05em;
+  padding: 20px 0;
+  color: #333;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.section:nth-of-type(odd) {
+  background-color: #f6f6f6;
+}
+
+.section .inner {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.section-title-area {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.section-title {
+  font-family: "Open sans", sans-serif;
+  font-size: 40px;
+  font-weight: normal;
+  letter-spacing: .05em;
+}
+
+/*--------------------------------
+HEADER
+---------------------------------*/
+#header {
+  align-items: center;
+  justify-content: center;
+  height: 86vh;
+}
+
+/*--------------------------------
+ GLOBAL NAVI
+---------------------------------*/
+#gnav {
+  background-color: #fff;
+}
+
+#gnav {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#gnav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#gnav li {
+  font-family: "Open sans", sans-serif;
+  font-size: 20px;
+  padding: 0 24px;
+  letter-spacing: .05em;
+}
+
+#gnav li a {
+  position: relative;
+  display: inline-block;
+  padding: 20px 0;
+  color: #333;
+  transition: .3s;
+}
+
+#gnav li a:hover {
+  opacity: 1;
+  color: #32CD32;
+}
+
+#gnav li a::before,
+#gnav li a::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 1px;
+  background-color: #2ecc71;
+  transition: .3s;
+}
+
+#gnav li a::before {
+  top: 0;
+  left: 0;
+}
+
+#gnav li a::after {
+  bottom: 0;
+  right: 0;
+}
+
+#gnav li a:hover::before,
+#gnav li a:hover::after {
+  width: 100%;
+}
+
+/*--------------------------------
+ WORKS
+---------------------------------*/
+#works .section-body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: space-between;
+}
+
+#works .work-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 0 0;
+}
+
+#works .work-image {
+  flex-basis: 30%;
+}
+
+#works .work-image img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#works .work-desc {
+  flex-basis: 60%;
+}
+
+/*--------------------------------
+ ABOUT
+---------------------------------*/
+#about .inner{
+  max-width: 1000px;
+}
+
+#about .section-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#about .section-image {
+  flex-basis: 20%;
+  margin: 0 auto;
+}
+
+#about .section-image img {
+  margin: 0 auto;
+}
+
+#about .section-desc {
+  flex-basis: 60%;
+}
+
+/*--------------------------------
+ FOOTER
+---------------------------------*/
+#js-pageTop {
+  font-family: "Open sans", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  display: block;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  background-color: #5d5d5d;
+}
